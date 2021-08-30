@@ -1,9 +1,11 @@
+import './App.css';
+
 // da forma abaixo, ele obriga a pessoa importar como App e não como qualquer nome, exemplo
 // import App from './App' e não import Batata from './App' (que funciona caso tenha o export default)
 export function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1 className='title'>Hello World</h1>
     </div>
   );
 }
