@@ -1,11 +1,24 @@
-import './App.css';
+// basta importar o arquivo css normalmente, caso não use styled-components
+// import './App.css';
+
+import styled from 'styled-components';
+
+const Title = styled.h1`
+    color: #8257e6;
+
+    button {
+        background: #8257e6;
+    }
+`;
 
 // da forma abaixo, ele obriga a pessoa importar como App e não como qualquer nome, exemplo
 // import App from './App' e não import Batata from './App' (que funciona caso tenha o export default)
 export function App() {
   return (
     <div className="App">
-      <h1 className='title'>Hello World</h1>
+      <Title>Hello World v2
+          <button>Teste</button>
+      </Title>
     </div>
   );
 }
