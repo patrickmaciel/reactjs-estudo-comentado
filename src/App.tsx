@@ -1,3 +1,5 @@
+import { Header } from "./components/Header";
+
 // basta importar o arquivo css normalmente, caso não use styled-components
 // import './App.css';
 
@@ -15,10 +17,11 @@ import { GlobalStyle } from "./styles/global";
 // import App from './App' e não import Batata from './App' (que funciona caso tenha o export default)
 export function App() {
   return (
-    <div className="App">
-        <GlobalStyle />
+    <>
+      <Header></Header>
+      <GlobalStyle />
       <h1>Relou uordi</h1>
-    </div>
+    </>
   );
 }
 
