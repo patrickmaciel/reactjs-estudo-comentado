@@ -52,6 +52,15 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
     }
 
+    body, input, textarea, button {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+    }
+
+    strong, h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+    }
+
     button {
         cursor: pointer;
     }
