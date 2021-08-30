@@ -1,3 +1,4 @@
+import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 
 // basta importar o arquivo css normalmente, caso não use styled-components
@@ -18,9 +19,9 @@ import { GlobalStyle } from "./styles/global";
 export function App() {
   return (
     <>
-      <Header></Header>
+      <Header />
+      <Dashboard />
       <GlobalStyle />
-      <h1>Relou uordi</h1>
     </>
   );
 }
